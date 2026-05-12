@@ -1,16 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Beauty Health Inn</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f5f1eb;
+      color: #2e2a27;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 40px;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 700px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 68px;
+      font-weight: 600;
+      line-height: 1.05;
+      margin-bottom: 28px;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #6d645d;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+
+    .brand {
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      color: #8f847a;
+    }
+
+    .services {
+      font-size: 16px;
+      color: #5f5751;
+      margin-bottom: 50px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 32px;
+
+      background: #d8cbbd;
+      color: #2e2a27;
+
+      text-decoration: none;
+
+      border-radius: 999px;
+
+      transition: all 0.3s ease;
+
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    .button:hover {
+      background: #cabaa9;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+
+      h1 {
+        font-size: 46px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+    }
+
+  </style>
 </head>
 
-<body style="font-family: serif; text-align:center; padding-top:100px; background:#D5D3E4;">
+<body>
 
-<h1>A Space for Deep Rest and Renewal</h1>
+  <div class="container">
 
-<p>Beauty Health Inn</p >
+    <div class="brand">
+      Beauty Health Inn
+    </div>
 
-<p>Facial • Body • Wellness</p >
+    <h1>
+      A Space for Deep Rest and Renewal
+    </h1>
+
+    <div class="subtitle">
+      A quiet approach to beauty, wellness, and restoration —
+      designed to support skin, body, and nervous system care.
+    </div>
+
+    <div class="services">
+      Facial • Body • Wellness
+    </div>
+
+    <a class="button" href=" ">
+      Enter the Space
+    </a >
+
+  </div>
 
 </body>
 </html>
