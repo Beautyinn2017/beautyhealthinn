@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Beauty and Health Inn</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5ede6;
+color:#24304a;
+font-family:'Inter',sans-serif;
+line-height:1.6;
+}
+
+h1,h2,h3{
+font-family:'Cormorant Garamond',serif;
+font-weight:500;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* NAV */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:28px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(245,237,230,0.92);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:28px;
+letter-spacing:1px;
+}
+
+.nav-links{
+display:flex;
+gap:42px;
+font-size:15px;
+}
+
+.nav-links a:hover{
+opacity:.6;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:grid;
+grid-template-columns:1fr 1fr;
+padding-top:90px;
+}
+
+.hero-left{
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:80px;
+}
+
+.hero-left h1{
+font-size:92px;
+line-height:.95;
+margin-bottom:40px;
+}
+
+.hero-left p{
+font-size:20px;
+margin-bottom:45px;
+font-weight:300;
+}
+
+.book-btn{
+display:inline-block;
+border:2px solid #24304a;
+padding:18px 48px;
+border-radius:50px;
+font-size:15px;
+letter-spacing:1px;
+transition:.3s;
+width:fit-content;
+}
+
+.book-btn:hover{
+background:#24304a;
+color:white;
+}
+
+.hero-right img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* ABOUT */
+
+.about{
+padding:140px 10%;
+}
+
+.about h2{
+font-size:90px;
+margin-bottom:20px;
+}
+
+.about-sub{
+font-size:20px;
+margin-bottom:40px;
+font-weight:300;
+}
+
+.about-text{
+font-size:48px;
+max-width:1100px;
+line-height:1.25;
+font-family:'Cormorant Garamond',serif;
+}
+
+/* SERVICES */
+
+.services{
+padding:120px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:90px;
+margin-bottom:20px;
+}
+
+.section-sub{
+text-align:center;
+font-size:22px;
+margin-bottom:30px;
+font-family:'Cormorant Garamond',serif;
+}
+
+.section-description{
+text-align:center;
+max-width:900px;
+margin:0 auto 80px;
+font-size:18px;
+font-weight:300;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:0;
+border-top:1px solid #777;
+border-left:1px solid #777;
+}
+
+.service-card{
+padding:80px;
+border-right:1px solid #777;
+border-bottom:1px solid #777;
+min-height:380px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.service-card h3{
+font-size:48px;
+margin-bottom:12px;
+}
+
+.service-card h4{
+font-size:22px;
+font-family:'Cormorant Garamond',serif;
+font-weight:400;
+margin-bottom:30px;
+}
+
+.service-card p{
+font-size:17px;
+font-weight:300;
+max-width:420px;
+}
+
+.view-link{
+margin-top:40px;
+display:inline-block;
+font-size:16px;
+text-decoration:underline;
+}
+
+/* IMAGE */
+
+.wellness-image img{
+width:100%;
+height:500px;
+object-fit:cover;
+}
+
+/* CONTACT */
+
+.contact{
+padding:120px 10%;
+}
+
+.contact h2{
+text-align:center;
+font-size:90px;
+margin-bottom:20px;
+}
+
+.contact-sub{
+text-align:center;
+margin-bottom:60px;
+font-size:22px;
+font-family:'Cormorant Garamond',serif;
+}
+
+.contact-form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:22px;
+border:1px solid #777;
+background:transparent;
+border-radius:40px;
+font-size:16px;
+font-family:'Inter',sans-serif;
+}
+
+.contact-form textarea{
+min-height:180px;
+border-radius:30px;
+resize:none;
+}
+
+.contact-form button{
+padding:20px;
+border:none;
+background:#bf3545;
+color:white;
+border-radius:50px;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact-form button:hover{
+opacity:.8;
+}
+
+/* FOOTER */
+
+footer{
+padding:120px 5% 40px;
+border-top:1px solid #999;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.2fr 1fr 1fr;
+gap:60px;
+align-items:start;
+}
+
+.footer-brand{
+font-size:72px;
+font-family:'Cormorant Garamond',serif;
+line-height:1.1;
+}
+
+.footer-info{
+font-size:20px;
+font-weight:300;
+}
+
+.footer-links{
+display:flex;
+flex-direction:column;
+gap:20px;
+font-size:20px;
+}
+
+.bottom-line{
+margin-top:60px;
+border-top:1px solid #999;
+padding-top:20px;
+font-size:14px;
+opacity:.6;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+nav{
+padding:20px;
+flex-direction:column;
+gap:20px;
+}
+
+.nav-links{
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.hero-left{
+padding:60px 30px;
+}
+
+.hero-left h1{
+font-size:64px;
+}
+
+.about h2,
+.section-title,
+.contact h2{
+font-size:58px;
+}
+
+.about-text{
+font-size:34px;
+}
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.footer-brand{
+font-size:50px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Beauty & Health Inn</div>
+
+<div class="nav-links">
+<a href=" ">About</a >
+<a href="#services">Services</a >
+<a href="#contact">Contact</a >
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="hero-left">
+<h1>
+FACIAL<br>
+BODY<br>
+HEALTH
+</h1>
+
+<p>Welcome to our salon</p >
+
+<a href="#contact" class="book-btn">BOOK NOW</a >
+</div>
+
+<div class="hero-right">
+< img src="hero.jpg">
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>About</h2>
+
+<div class="about-sub">
+A Space for Deep Rest and Renewal
+</div>
+
+<div class="about-text">
+A quiet approach to beauty, wellness, and restoration — designed to support skin, body, and nervous system care.
+</div>
+
+</section>
+
+<section class="services" id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="section-sub">
+Luxurious Offerings
+</div>
+
+<div class="section-description">
+Tailored facial rituals designed to restore hydration, improve skin texture, and support graceful aging.
+</div>
+
+<div class="service-grid">
+
+<div class="service-card">
+<div>
+<h3>Facial Treatments</h3>
+<h4>Hydration & Skin Renewal</h4>
+
+<p>
+Customised facial treatments designed to deeply cleanse, hydrate, and restore skin radiance.
+</p >
+</div>
+
+<a href="#" class="view-link">VIEW ALL</a >
+</div>
+
+<div class="service-card">
+<div>
+<h3>Body Health</h3>
+<h4>Detox & Wellness Support</h4>
+
+<p>
+Body-focused treatments created to encourage circulation, relaxation, and overall wellness.
+</p >
+</div>
+
+<a href="#" class="view-link">VIEW ALL</a >
+</div>
+
+<div class="service-card">
+<div>
+<h3>7D HIFU Lifting</h3>
+<h4>Non-Surgical Age Management</h4>
+
+<p>
+Advanced HIFU technology designed to support skin firmness, contour definition, and natural lifting.
+</p >
+</div>
+
+<a href="#" class="view-link">VIEW ALL</a >
+</div>
+
+<div class="service-card">
+<div>
+<h3>Beauty Enhancement</h3>
+<h4>Finishing Touches</h4>
+
+<p>
+Complement your facial experience with beauty-enhancing services and personalised care.
+</p >
+</div>
+
+<a href="#" class="view-link">VIEW ALL</a >
+</div>
+
+</div>
+
+</section>
+
+<section class="wellness-image">
+< img src="wellness.jpg">
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact-sub">
+Get in Touch with Us
+</div>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Phone">
+
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div class="footer-brand">
+Your local salon of Relaxation
+</div>
+
+<div class="footer-info">
+0426621588<br><br>
+
+beautyhealthinn@hotmail.com<br><br>
+
+74/183 Macquarie St<br>
+Sydney NSW 2000 Australia
+</div>
+
+<div class="footer-links">
+<a href="#">Privacy Policy</a >
+<a href="#">Accessibility Statement</a >
+<a href="#">Instagram</a >
+<a href="#">Facebook</a >
+</div>
+
+</div>
+
+<div class="bottom-line">
+© Beauty and Health Inn
+</div>
+
+</footer>
+
+</body>
+</html>
