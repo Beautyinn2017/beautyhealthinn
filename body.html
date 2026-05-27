@@ -1,1 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>7D HIFU | Beauty and Health Inn</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: 'Inter', sans-serif;
+background:#f8f4ef;
+color:#24304a;
+line-height:1.7;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.header{
+padding:30px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #ddd;
+background:white;
+}
+
+.logo{
+font-size:28px;
+font-family:'Cormorant Garamond', serif;
+}
+
+.nav{
+display:flex;
+gap:30px;
+}
+
+.hero{
+padding:100px 10% 60px;
+text-align:center;
+}
+
+.hero h1{
+font-size:72px;
+font-family:'Cormorant Garamond', serif;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:18px;
+color:#666;
+}
+
+.treatment-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:0;
+margin-top:80px;
+}
+
+.treatment-grid img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.text-box{
+padding:70px;
+background:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.text-box h2{
+font-size:42px;
+font-family:'Cormorant Garamond', serif;
+margin-bottom:20px;
+}
+
+.text-box p{
+margin-bottom:20px;
+color:#555;
+}
+
+.price{
+font-size:28px;
+margin-top:20px;
+}
+
+.book-btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 40px;
+border:1px solid #24304a;
+width:fit-content;
+transition:.3s;
+}
+
+.book-btn:hover{
+background:#24304a;
+color:white;
+}
+
+.footer{
+padding:80px 10%;
+display:flex;
+justify-content:space-between;
+margin-top:100px;
+border-top:1px solid #ddd;
+font-size:14px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:48px;
+}
+
+.treatment-grid{
+grid-template-columns:1fr;
+}
+
+.text-box{
+padding:40px;
+}
+
+.footer{
+flex-direction:column;
+gap:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+Beauty & Health Inn
+</div>
+
+<nav class="nav">
+<a href=" ">Home</a >
+<a href="facial.html">Facial</a >
+<a href="7dhifu.html">7D HIFU</a >
+<a href="body.html">Body</a >
+<a href="other.html">Other Service</a >
+<a href="#contact">Contact</a >
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>7D HIFU</h1>
+
+<p>
+Advanced non-surgical lifting treatment designed to tighten skin,
+improve facial contour, and support collagen regeneration.
+</p >
+
+</section>
+
+<section class="treatment-grid">
+
+< img src="hifu.webp">
+
+<div class="text-box">
+
+<h2>7D HIFU Lifting</h2>
+
+<p>
+A focused ultrasound treatment targeting deep skin layers
+to improve firmness, jawline definition, and overall facial contour.
+</p >
+
+<p>
+Suitable for loose skin, fine lines, double chin,
+and age-related skin laxity.
+</p >
+
+<div class="price">
+$299aud
+</div>
+
+<a href="#contact" class="book-btn">
+BOOK NOW
+</a >
+
+</div>
+
+</section>
+
+<footer class="footer" id="contact">
+
+<div>
+<h3>Beauty and Health Inn</h3>
+<p>Your local salon of relaxation.</p >
+</div>
+
+<div>
+<p>0426621588</p >
+<p>beautyhealthinn@hotmail.com</p >
+<p>74/183 Macquarie St Sydney NSW2000</p >
+</div>
+
+</footer>
+
+</body>
+</html>
