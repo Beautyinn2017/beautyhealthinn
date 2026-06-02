@@ -1,450 +1,279 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Facial Treatments at Beauty and Health Inn - Professional facial treatments including relaxation, oxygen, and age-smart facials in Sydney."/>
-<meta name="theme-color" content="#f5ede6"/>
 
-<title>Facial Treatments - Beauty and Health Inn</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=league+spartan:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:#F5EDE6;
-color:#24304a;
-font-family:'Cormorant Garamond',serif;
-line-height:1.6;
-}
-
-h1,h2,h3{
-font-family:'Cormorant Garamond',serif;
-font-weight:500;
-}
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-img{
-max-width:100%;
-display:block;
-}
-
-/* NAV */
-
-.header{
-position:fixed;
-width:100%;
-padding:15px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(245,237,230,0.92);
-backdrop-filter:blur(10px);
-z-index:1000;
-top:0;
-left:0;
-}
-
-.logo{
-font-family:'Cormorant Garamond',serif;
-font-size:18px;
-letter-spacing:1px;
-white-space:nowrap;
-flex-shrink:0;
-display:flex;
-align-items:center;
-gap:12px;
-font-weight:500;
-}
-
-.logo img{
-max-width:60px;
-height:auto;
-display:block;
-}
-  
-nav{
-display:flex;
-}
-  
-.nav-links{
-display:flex;
-gap:42px;
-font-size:12px;
-font-family:'League Spartan',sans-serif;
-font-weight:300;
-list-style:none;
-margin:0;
-}
-
-.nav-links a{
-transition:opacity 0.3s ease;
-}
-
-.nav-links a:hover{
-opacity:0.6;
-}
-
-/* FACIAL PAGE */
-
-.facial-page {
-    padding: 60px 0 0 0;
-    margin-top: 90px;
-    background: #F5EDE6;
-}
-
-.facial-intro {
-    text-align: center;
-    padding: 60px 8% 80px;
-    background: #F5EDE6;
-}
-
-.facial-intro h1 {
-    font-size: 70px;
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-family: 'Marcellus', serif;
-}
-
-.facial-intro p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-weight: 300;
-    color: #555;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.treatment-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: stretch;
-    margin: 0;
-    min-height: 320px;
-}
-
-.treatment-image {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-.treatment-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.treatment-text {
-    background: #F5EDE6;
-    padding: 40px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-}
-
-.treatment-text h2 {
-    font-size: 42px;
-    margin-bottom: 30px;
-    font-weight: 400;
-}
-
-.treatment-text p {
-    margin-bottom: 20px;
-    line-height: 1.8;
-    font-size: 17px;
-    font-weight: 300;
-    color: #555;
-}
-
-.price {
-    margin-top: 40px;
-    font-size: 32px;
-    font-weight: 500;
-}
-
-/* Alternate layout for section 2 */
-.treatment-section.reverse {
-    direction: ltr;
-}
-
-.treatment-section.reverse .treatment-image {
-    order: 2;
-}
-
-.treatment-section.reverse .treatment-text {
-    order: 1;
-}
-
-.book-section {
-    text-align: center;
-    padding: 80px 8%;
-    background: #F5EDE6;
-}
-
-.book-btn {
-    display: inline-block;
-    background: #1d2a44;
-    color: white;
-    padding: 16px 40px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-size: 14px;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-    border: 2px solid #1d2a44;
-}
-
-.book-btn:hover {
-    background: #0f1823;
-    border-color: #0f1823;
-}
-
-.book-btn:focus {
-    outline: 2px solid #fff;
-    outline-offset: 2px;
-}
-
-/* FOOTER */
-
-footer{
-padding:120px 5% 40px;
-border-top:1px solid #999;
-background: white;
-}
-
-.footer-grid{
-display:grid;
-grid-template-columns:1.2fr 1fr 1fr;
-gap:60px;
-align-items:start;
-}
-
-.footer-brand{
-font-size:28px;
-font-family:'League Spartan',serif;
-font-weight:300;
-line-height:1.3;
-}
-
-.footer-info{
-font-size:18px;
-font-family:'League Spartan',sans-serif;
-text-align:right;
-line-height:1.6;
-}
-
-.footer-links{
-font-size:18px;
-font-family:'League Spartan',sans-serif;
-text-align:right;
-line-height:1.6;
-}
-
-.footer-links a {
-    display: block;
-    margin-bottom: 12px;
-}
-
-.bottom-line{
-margin-top:60px;
-border-top:1px solid #999;
-padding-top:20px;
-font-size:14px;
-opacity:.6;
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-.header{
-padding:12px 30px;
-}
-
-.logo{
-font-size:16px;
-gap:8px;
-}
-
-.logo img{
-max-width:50px;
-}
-
-.nav-links{
-gap:20px;
-flex-wrap:wrap;
-justify-content:flex-end;
-font-size:11px;
-}
-
-.facial-intro {
-    padding: 60px 5% 60px;
-}
-
-.facial-intro h1 {
-    font-size: 48px;
-}
-
-.treatment-section {
-    grid-template-columns: 1fr;
-    min-height: auto;
-}
-
-.treatment-section.reverse .treatment-image,
-.treatment-section.reverse .treatment-text {
-    order: unset;
-}
-
-.treatment-text {
-    padding: 40px 30px;
-}
-
-.treatment-text h2 {
-    font-size: 28px;
-}
-
-.footer-grid{
-grid-template-columns:1fr;
-}
-
-.footer-brand{
-font-size:50px;
-}
-
-.footer-info,
-.footer-links{
-text-align:left;
-}
-
-}
-
-@media(max-width:480px){
-
-.facial-intro h1 {
-    font-size: 32px;
-}
-
-.treatment-text h2 {
-    font-size: 22px;
-}
-
-.price {
-    font-size: 24px;
-}
-
-.treatment-text {
-    padding: 30px 20px;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<header class="header">
-
-<div class="logo">
-<img src="beauty health inn logo copy.webp" alt="Beauty & Health Inn">
-<span>BEAUTY and HEALTH iNN</span>
-</div>
-
-<nav class="nav-links">
-
-<a href="index.html">HOME</a>
-
-<a href="facial.html">Facial</a>
-
-<a href="7dhifu.html">7D HIFU</a>
-
-<a href="body.html">Body</a>
-
-<a href="otherservice.html">Other Service</a>
-
-<a href="index.html#contact">Contact</a>
-
-</nav>
-
-</header>
-
-<main>
-
-<section class="facial-page">
+<section class="body-page">
 
     <div class="facial-intro">
-        <h1>Facial Treatment</h1>
-        <p>Healthy skin is built through consistency, balance, and professional care.</p>
-        <p>We focus on personalised facial treatments designed to restore hydration, improve skin texture, and support long-term skin health.</p>
+
+        <h1>Body Health Care</h1>
+
+        <p>
+            Supporting wellness, recovery, body contouring and muscle health.
+        </p >
+
+        <p>
+            Explore our specialised body treatments designed to improve circulation,
+            support recovery, and enhance overall wellbeing.
+        </p >
+
     </div>
 
-    <!-- Section 1: Image Left, Text Right -->
+
+    <!-- EMS -->
+
     <div class="treatment-section">
+
         <div class="treatment-image">
-            <img src="facial.jpg" alt="60 minute relaxation facial treatment showing professional skincare application">
+            < img src="ems.jpg" alt="EMS Muscle Building">
         </div>
+
         <div class="treatment-text">
-            <h2>60 mins Relaxation Facial</h2>
-            <p>Designed to deeply cleanse, relax, and restore.</p>
-            <p>This treatment includes a triple-step cleansing ritual, facial and neck massage or lymphatic drainage, and a hydration mask treatment.</p>
-            <div class="price">$99 AUD</div>
+
+            <h2>EMS Muscle Building</h2>
+
+            <p>
+                EMS technology stimulates targeted muscle groups to support
+                muscle strengthening, body contouring and improved physical performance.
+            </p >
+
+            <p>
+                Suitable for clients looking to improve muscle tone,
+                core strength and body definition.
+            </p >
+
+            <div class="price">$450 AUD</div>
+
         </div>
+
     </div>
 
-    <!-- Section 2: Text Left, Image Right -->
+
+    <!-- Happiness Mat -->
+
     <div class="treatment-section reverse">
+
         <div class="treatment-image">
-            <img src="oxygen facial.jpg" alt="Oxygen facial treatment with hyaluronic acid infusion for hydrated skin">
+            < img src="mat.jpg" alt="EMS Happiness Mat">
         </div>
+
         <div class="treatment-text">
-            <h2>60 mins Oxygen Facial</h2>
-            <p>Designed to deeply hydrate and refresh the skin using hyaluronic acid serum or vitamin C infusion.</p>
-            <p>This treatment includes deep cleansing, a hydrating mask, and oxygen bubble technology for a clearer, more radiant complexion.</p>
-            <div class="price">$119 AUD</div>
+
+            <h2>EMS Happiness Mat</h2>
+
+            <p>
+                Designed to support relaxation, circulation and overall wellbeing.
+            </p >
+
+            <p>
+                A comfortable full-body treatment helping to reduce tension
+                and encourage recovery.
+            </p >
+
+            <div class="price">$450 AUD</div>
+
         </div>
+
     </div>
 
-    <!-- Section 3: Image Left, Text Right -->
+
+    <!-- Gua Sha -->
+
     <div class="treatment-section">
+
         <div class="treatment-image">
-            <img src="age.jpg" alt="Age Smart facial treatment combining anti-aging skincare with red LED light therapy">
+            < img src="guasha.jpg" alt="Gua Sha Treatment">
         </div>
+
         <div class="treatment-text">
-            <h2>70 mins Age Smart Facial</h2>
-            <p>Designed for mature skin customers.</p>
-            <p>This restorative treatment combines professional anti-aging skincare with oxygen bubble cleansing, ultrasound infusion, and red LED light therapy to support skin firmness, hydration and overall radiance.</p>
-            <div class="price">$129 AUD</div>
+
+            <h2>Gua Sha Therapy</h2>
+
+            <p>
+                Traditional therapy supporting circulation,
+                muscle release and lymphatic drainage.
+            </p >
+
+            <p>
+                Ideal for clients experiencing stiffness,
+                tension and poor circulation.
+            </p >
+
+            <div class="price">$99 AUD</div>
+
         </div>
+
     </div>
+
+
+    <!-- Uterus Care -->
+
+    <div class="treatment-section reverse">
+
+        <div class="treatment-image">
+            < img src="uterus.jpg" alt="Uterus Care">
+        </div>
+
+        <div class="treatment-text">
+
+            <h2>Uterus & Ovary Care</h2>
+
+            <p>
+                Gentle warming therapy designed to support comfort,
+                circulation and women's wellness.
+            </p >
+
+            <div class="price">$129 AUD</div>
+
+        </div>
+
+    </div>
+
 
     <div class="book-section">
-        <a href="index.html#contact" class="book-btn">BOOK NOW</a>
+
+        <a href=" " class="book-btn">
+            BOOK NOW
+        </a >
+
     </div>
 
 </section>
 
-</main>
+<section class="body-page">
+
+    <div class="facial-intro">
+
+        <h1>Body Health Care</h1>
+
+        <p>
+            Supporting wellness, recovery, body contouring and muscle health.
+        </p >
+
+        <p>
+            Explore our specialised body treatments designed to improve circulation,
+            support recovery, and enhance overall wellbeing.
+        </p >
+
+    </div>
+
+
+    <!-- EMS -->
+
+    <div class="treatment-section">
+
+        <div class="treatment-image">
+            < img src="ems.jpg" alt="EMS Muscle Building">
+        </div>
+
+        <div class="treatment-text">
+
+            <h2>EMS Muscle Building</h2>
+
+            <p>
+                EMS technology stimulates targeted muscle groups to support
+                muscle strengthening, body contouring and improved physical performance.
+            </p >
+
+            <p>
+                Suitable for clients looking to improve muscle tone,
+                core strength and body definition.
+            </p >
+
+            <div class="price">$450 AUD</div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Happiness Mat -->
+
+    <div class="treatment-section reverse">
+
+        <div class="treatment-image">
+            < img src="mat.jpg" alt="EMS Happiness Mat">
+        </div>
+
+        <div class="treatment-text">
+
+            <h2>EMS Happiness Mat</h2>
+
+            <p>
+                Designed to support relaxation, circulation and overall wellbeing.
+            </p >
+
+            <p>
+                A comfortable full-body treatment helping to reduce tension
+                and encourage recovery.
+            </p >
+
+            <div class="price">$450 AUD</div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Gua Sha -->
+
+    <div class="treatment-section">
+
+        <div class="treatment-image">
+            < img src="guasha.jpg" alt="Gua Sha Treatment">
+        </div>
+
+        <div class="treatment-text">
+
+            <h2>Gua Sha Therapy</h2>
+
+            <p>
+                Traditional therapy supporting circulation,
+                muscle release and lymphatic drainage.
+            </p >
+
+            <p>
+                Ideal for clients experiencing stiffness,
+                tension and poor circulation.
+            </p >
+
+            <div class="price">$99 AUD</div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Uterus Care -->
+
+    <div class="treatment-section reverse">
+
+        <div class="treatment-image">
+            < img src="uterus.jpg" alt="Uterus Care">
+        </div>
+
+        <div class="treatment-text">
+
+            <h2>Uterus & Ovary Care</h2>
+
+            <p>
+                Gentle warming therapy designed to support comfort,
+                circulation and women's wellness.
+            </p >
+
+            <div class="price">$129 AUD</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="book-section">
+
+        <a href=" " class="book-btn">
+            BOOK NOW
+        </a >
+
+    </div>
+
+</section>
 
 <footer>
 
