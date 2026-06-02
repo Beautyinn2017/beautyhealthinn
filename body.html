@@ -102,6 +102,266 @@ transition:opacity 0.3s ease;
 opacity:0.6;
 }
 
+/* FACIAL PAGE */
+
+.facial-page {
+    padding: 60px 0 0 0;
+    margin-top: 90px;
+    background: #F5EDE6;
+}
+
+.facial-intro {
+    text-align: center;
+    padding: 60px 8% 80px;
+    background: #F5EDE6;
+}
+
+.facial-intro h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Marcellus', serif;
+}
+
+.facial-intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.treatment-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    margin: 0;
+    min-height: 320px;
+}
+
+.treatment-image {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.treatment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.treatment-text {
+    background: #F5EDE6;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.treatment-text h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.treatment-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 17px;
+    font-weight: 300;
+    color: #555;
+}
+
+.price {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+/* Alternate layout for section 2 */
+.treatment-section.reverse {
+    direction: ltr;
+}
+
+.treatment-section.reverse .treatment-image {
+    order: 2;
+}
+
+.treatment-section.reverse .treatment-text {
+    order: 1;
+}
+
+.book-section {
+    text-align: center;
+    padding: 80px 8%;
+    background: #F5EDE6;
+}
+
+.book-btn {
+    display: inline-block;
+    background: #1d2a44;
+    color: white;
+    padding: 16px 40px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    border: 2px solid #1d2a44;
+}
+
+.book-btn:hover {
+    background: #0f1823;
+    border-color: #0f1823;
+}
+
+.book-btn:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* FOOTER */
+
+footer{
+padding:120px 5% 40px;
+border-top:1px solid #999;
+background: white;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.2fr 1fr 1fr;
+gap:60px;
+align-items:start;
+}
+
+.footer-brand{
+font-size:28px;
+font-family:'League Spartan',serif;
+font-weight:300;
+line-height:1.3;
+}
+
+.footer-info{
+font-size:18px;
+font-family:'League Spartan',sans-serif;
+text-align:right;
+line-height:1.6;
+}
+
+.footer-links{
+font-size:18px;
+font-family:'League Spartan',sans-serif;
+text-align:right;
+line-height:1.6;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.bottom-line{
+margin-top:60px;
+border-top:1px solid #999;
+padding-top:20px;
+font-size:14px;
+opacity:.6;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.header{
+padding:12px 30px;
+}
+
+.logo{
+font-size:16px;
+gap:8px;
+}
+
+.logo img{
+max-width:50px;
+}
+
+.nav-links{
+gap:20px;
+flex-wrap:wrap;
+justify-content:flex-end;
+font-size:11px;
+}
+
+.facial-intro {
+    padding: 60px 5% 60px;
+}
+
+.facial-intro h1 {
+    font-size: 48px;
+}
+
+.treatment-section {
+    grid-template-columns: 1fr;
+    min-height: auto;
+}
+
+.treatment-section.reverse .treatment-image,
+.treatment-section.reverse .treatment-text {
+    order: unset;
+}
+
+.treatment-text {
+    padding: 40px 30px;
+}
+
+.treatment-text h2 {
+    font-size: 28px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.footer-brand{
+font-size:50px;
+}
+
+.footer-info,
+.footer-links{
+text-align:left;
+}
+
+}
+
+@media(max-width:480px){
+
+.facial-intro h1 {
+    font-size: 32px;
+}
+
+.treatment-text h2 {
+    font-size: 22px;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.treatment-text {
+    padding: 30px 20px;
+}
+
+}
+
+</style>
+</head>
+
 <section class="body-page">
 
     <div class="facial-intro">
