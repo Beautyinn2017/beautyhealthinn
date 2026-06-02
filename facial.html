@@ -1,174 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Facial Treatments at Beauty and Health Inn - Professional facial treatments including relaxation, oxygen, and age-smart facials in Sydney."/>
+<meta name="theme-color" content="#f5ede6"/>
+
+<title>Facial Treatments - Beauty and Health Inn</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=league+spartan:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5ede6;
+color:#24304a;
+font-family:'Cormorant Garamond',serif;
+line-height:1.6;
+}
+
+h1,h2,h3{
+font-family:'Cormorant Garamond',serif;
+font-weight:500;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* NAV */
+
+.header{
+position:fixed;
+width:100%;
+padding:15px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(245,237,230,0.92);
+backdrop-filter:blur(10px);
+z-index:1000;
+top:0;
+left:0;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:18px;
+letter-spacing:1px;
+white-space:nowrap;
+flex-shrink:0;
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:500;
+}
+
+.logo img{
+max-width:60px;
+height:auto;
+display:block;
+}
+  
+nav{
+display:flex;
+}
+  
+.nav-links{
+display:flex;
+gap:42px;
+font-size:12px;
+font-family:'League Spartan',sans-serif;
+font-weight:300;
+list-style:none;
+margin:0;
+}
+
+.nav-links a{
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.6;
+}
+
+/* FACIAL PAGE */
+
+.facial-page {
+    padding: 120px 8% 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.facial-intro {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.facial-intro h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.facial-intro p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #555;
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+    background: white;
+}
+
+.treatment-grid--reverse {
+    direction: ltr;
+}
+
+.treatment-grid--reverse .treatment-image {
+    order: 2;
+}
+
+.treatment-grid--reverse .treatment-text {
+    order: 1;
+}
+
+.treatment-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 1 / 1;
+}
+
+.treatment-text {
+    padding: 60px;
+}
+
+.treatment-text h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.treatment-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 17px;
+    font-weight: 300;
+    color: #555;
+}
+
+.price {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.book-section {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.book-btn {
+    display: inline-block;
+    background: #1d2a44;
+    color: white;
+    padding: 16px 40px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    border: 2px solid #1d2a44;
+}
+
+.book-btn:hover {
+    background: #0f1823;
+    border-color: #0f1823;
+}
+
+.book-btn:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* FOOTER */
+
+footer{
+padding:120px 5% 40px;
+border-top:1px solid #999;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.2fr 1fr 1fr;
+gap:60px;
+align-items:start;
+}
+
+.footer-brand{
+font-size:28px;
+font-family:'League Spartan',serif;
+font-weight:300;
+line-height:1.3;
+}
+
+.footer-info{
+font-size:18px;
+font-family:'League Spartan',sans-serif;
+text-align:right;
+line-height:1.6;
+}
+
+.footer-links{
+font-size:18px;
+font-family:'League Spartan',sans-serif;
+text-align:right;
+line-height:1.6;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.bottom-line{
+margin-top:60px;
+border-top:1px solid #999;
+padding-top:20px;
+font-size:14px;
+opacity:.6;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.header{
+padding:12px 30px;
+}
+
+.logo{
+font-size:16px;
+gap:8px;
+}
+
+.logo img{
+max-width:50px;
+}
+
+.nav-links{
+gap:20px;
+flex-wrap:wrap;
+justify-content:flex-end;
+font-size:11px;
+}
+
+.facial-page {
+    padding: 60px 5% 40px;
+    margin-top: 100px;
+}
+
+.facial-intro h1 {
+    font-size: 48px;
+}
+
+.treatment-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.treatment-grid--reverse .treatment-image,
+.treatment-grid--reverse .treatment-text {
+    order: unset;
+}
+
+.treatment-text {
+    padding: 30px;
+}
+
+.treatment-text h2 {
+    font-size: 28px;
+}
+
+.treatment-image img {
+    aspect-ratio: 4 / 3;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.footer-brand{
+font-size:50px;
+}
+
+.footer-info,
+.footer-links{
+text-align:left;
+}
+
+}
+
+@media(max-width:480px){
+
+.facial-intro h1 {
+    font-size: 32px;
+}
+
+.treatment-text h2 {
+    font-size: 22px;
+}
+
+.price {
+    font-size: 24px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+<img src="beauty health inn logo copy.webp" alt="Beauty & Health Inn">
+<span>BEAUTY and HEALTH iNN</span>
+</div>
+
+<nav class="nav-links">
+
+<a href="index.html">HOME</a>
+
+<a href="facial.html">Facial</a>
+
+<a href="7dhifu.html">7D HIFU</a>
+
+<a href="body.html">Body</a>
+
+<a href="otherservice.html">Other Service</a>
+
+<a href="index.html#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<main>
+
 <section class="facial-page">
 
     <div class="facial-intro">
         <h1>Facial Treatment</h1>
-
-        <p>
-            Healthy skin is built through consistency, balance, and professional care.
-        </p >
-
-        <p>
-            We focus on personalised facial treatments designed to restore hydration,
-            improve skin texture, and support long-term skin health.
-        </p >
+        <p>Healthy skin is built through consistency, balance, and professional care.</p>
+        <p>We focus on personalised facial treatments designed to restore hydration, improve skin texture, and support long-term skin health.</p>
     </div>
 
     <div class="treatment-grid">
-
         <div class="treatment-image">
-            < img src="facial.jpg" alt="">
+            <img src="facial.jpg" alt="60 minute relaxation facial treatment showing professional skincare application">
         </div>
-
         <div class="treatment-text">
             <h2>60 mins Relaxation Facial</h2>
-
-            <p>
-                Designed to deeply cleanse, relax, and restore.
-            </p >
-
-            <p>
-                This treatment includes a triple-step cleansing ritual,
-                facial and neck massage or lymphatic drainage,
-                and a hydration mask treatment.
-            </p >
-
+            <p>Designed to deeply cleanse, relax, and restore.</p>
+            <p>This treatment includes a triple-step cleansing ritual, facial and neck massage or lymphatic drainage, and a hydration mask treatment.</p>
             <div class="price">$99 AUD</div>
         </div>
-
     </div>
 
-    <div class="treatment-grid reverse">
-
+    <div class="treatment-grid treatment-grid--reverse">
         <div class="treatment-image">
-            < img src="oxygen facial.jpg" alt="">
+            <img src="oxygen.jpg" alt="Oxygen facial treatment with hyaluronic acid infusion for hydrated skin">
         </div>
-
         <div class="treatment-text">
             <h2>60 mins Oxygen Facial</h2>
-
-            <p>
-                Designed to deeply hydrate and refresh the skin using
-                hyaluronic acid serum or vitamin C infusion.
-            </p >
-
-            <p>
-                This treatment includes deep cleansing,
-                a hydrating mask,
-                and oxygen bubble technology for a clearer,
-                more radiant complexion.
-            </p >
-
+            <p>Designed to deeply hydrate and refresh the skin using hyaluronic acid serum or vitamin C infusion.</p>
+            <p>This treatment includes deep cleansing, a hydrating mask, and oxygen bubble technology for a clearer, more radiant complexion.</p>
             <div class="price">$119 AUD</div>
         </div>
-
     </div>
 
     <div class="treatment-grid">
-
         <div class="treatment-image">
-            < img src="age.jpg" alt="">
+            <img src="age.jpg" alt="Age Smart facial treatment combining anti-aging skincare with red LED light therapy">
         </div>
-
         <div class="treatment-text">
             <h2>70 mins Age Smart Facial</h2>
-
-            <p>
-                Designed to mature skin customers.
-            </p >
-
-            <p>
-                This restorative treatment combines professional
-                anti-aging skincare with oxygen bubble cleansing,
-                ultrasound infusion,
-                and red LED light therapy to support skin firmness,
-                hydration and overall radiance.
-            </p >
-
+            <p>Designed for mature skin customers.</p>
+            <p>This restorative treatment combines professional anti-aging skincare with oxygen bubble cleansing, ultrasound infusion, and red LED light therapy to support skin firmness, hydration and overall radiance.</p>
             <div class="price">$129 AUD</div>
         </div>
-
     </div>
 
     <div class="book-section">
-        <a href=" " class="book-btn">
-            BOOK NOW
-        </a >
+        <a href="index.html#contact" class="book-btn">BOOK NOW</a>
     </div>
 
 </section>
 
-.facial-page{
-    padding:120px 8% 80px;
-}
+</main>
 
-.facial-intro{
-    text-align:center;
-    margin-bottom:100px;
-}
+<footer>
 
-.facial-intro h1{
-    font-size:72px;
-    margin-bottom:20px;
-}
+<div class="footer-grid">
 
-.facial-intro p{
-    font-size:20px;
-    margin-bottom:20px;
-}
+<div class="footer-brand">
+BEAUTY and HEALTH iNN<br>
+<span class="footer-tagline">
+Your local salon of Relaxation
+</span>
+</div>
 
-.treatment-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    align-items:center;
-    margin-bottom:80px;
-    background:white;
-}
+<div class="footer-info">
+0426621588<br><br>
 
-.treatment-grid.reverse{
-    direction:rtl;
-}
+beautyhealthinn@hotmail.com<br><br>
 
-.treatment-grid.reverse .treatment-text{
-    direction:ltr;
-}
+74/183 Macquarie St<br>
+Sydney NSW 2000 Australia
+</div>
 
-.treatment-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-}
+<div class="footer-links">
+<a href="#">Privacy Policy</a>
+<a href="#">Accessibility Statement</a>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+</div>
 
-.treatment-text{
-    padding:60px;
-}
+</div>
 
-.treatment-text h2{
-    font-size:42px;
-    margin-bottom:30px;
-}
+<div class="bottom-line">
+© Beauty and Health Inn
+</div>
 
-.treatment-text p{
-    margin-bottom:20px;
-    line-height:1.8;
-}
+</footer>
 
-.price{
-    margin-top:40px;
-    font-size:32px;
-    font-weight:500;
-}
-
-.book-section{
-    text-align:center;
-    margin-top:80px;
-}
-
-.book-btn{
-    background:#1d2a44;
-    color:white;
-    padding:16px 40px;
-    text-decoration:none;
-    letter-spacing:2px;
-    font-size:14px;
-}
+</body>
+</html>
