@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Beauty and Health Inn - Professional beauty and wellness treatments including facials, body care, and 7D HIFU lifting services in Sydney."/>
+<meta name="theme-color" content="#f5ede6"/>
 
 <title>Beauty and Health Inn</title>
 
@@ -25,7 +27,7 @@ scroll-behavior:smooth;
 body{
 background:#f5ede6;
 color:#24304a;
-font-family:'Cormorant Garamond’,serif;
+font-family:'Cormorant Garamond',serif;
 line-height:1.6;
 }
 
@@ -65,17 +67,18 @@ white-space:nowrap;
 flex-shrink:0;
 }
   
-nav(
+nav{
 display:flex;
-)
+}
   
 .nav-links{
 display:flex;
 gap:42px;
 font-size:12px;
-font-family:'League Spartan',sans-serif}
+font-family:'League Spartan',sans-serif;
 font-weight:300;
 margin-left:auto;
+}
 
 .nav-links a:hover{
 opacity:.6;
@@ -97,7 +100,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 padding-left:90px;
-Padding-right:60px;
+padding-right:60px;
 }
 
 .hero-left h1{
@@ -142,7 +145,7 @@ object-fit:cover;
 
 .about{
 padding:120px 12%;
-Max-width:1400px;
+max-width:1400px;
 margin:0 auto;
 text-align:left;
 }
@@ -183,8 +186,8 @@ text-align:center;
 text-align:center;
 font-size:92px;
 margin-bottom:25px;
-Letter-spacing:-3px;
-Font-weight:400;
+letter-spacing:-3px;
+font-weight:400;
 line-height:0.95;
 }
 
@@ -272,7 +275,7 @@ margin-bottom:20px;
 text-transform:uppercase;
 letter-spacing:4px;
 font-size:12px;
-font-align:center;
+text-align:center;
 font-family:'league Spartan',sans-serif;
 }
 
@@ -315,18 +318,18 @@ transition:.3s;
 opacity:.8;
 }
 
-.parallax-banner(
+.parallax-banner{
 width:100%;
 height:100%;
 overflow:hidden;
-)
+}
 
-.parallyax-banner img(
+.parallax-banner img{
 width:100%;
 height:100%;
 object-fit:cover;
 display:block;
-)
+}
   
 /* FOOTER */
 
@@ -342,25 +345,25 @@ gap:60px;
 align-items:start;
 }
 
-footer-brand{
-    font-size:28px;
-    font-family:'League Spartan',serif;
-    font-weight:300;
-    line-height:1.3;
+.footer-brand{
+font-size:28px;
+font-family:'League Spartan',serif;
+font-weight:300;
+line-height:1.3;
 }
 
 .footer-info{
-    font-size:18px;
-    font-family:'League Spartan',sans-serif;
-    text-align:right;
-    line-height:1.6;
+font-size:18px;
+font-family:'League Spartan',sans-serif;
+text-align:right;
+line-height:1.6;
 }
 
 .footer-links{
-    font-size:18px;
-    font-family:'League Spartan',sans-serif;
-    text-align:right;
-    line-height:1.6;
+font-size:18px;
+font-family:'League Spartan',sans-serif;
+text-align:right;
+line-height:1.6;
 }
 
 .bottom-line{
@@ -421,6 +424,8 @@ grid-template-columns:1fr;
 font-size:50px;
 }
 
+}
+
 </style>
 </head>
 
@@ -429,26 +434,28 @@ font-size:50px;
 <header class="header">
 
 <div class="logo">
-<img scr="beauty health inn logo copy.webp" alt="Beauty & Health Inn";
+<img src="beauty health inn logo copy.webp" alt="Beauty & Health Inn">
 </div>
 
 <nav class="nav-links">
 
-<a href="index.html">HOME</a >
+<a href="index.html">HOME</a>
 
-<a href="facial.html">Facial</a >
+<a href="facial.html">Facial</a>
 
-<a href="7dhifu.html">7D HIFU</a >
+<a href="7dhifu.html">7D HIFU</a>
 
-<a href="body.html">Body</a >
+<a href="body.html">Body</a>
 
-<a href="otherservice.html">Other Service</a >
+<a href="otherservice.html">Other Service</a>
 
-<a href="#contact">Contact</a >
+<a href="#contact">Contact</a>
 
 </nav>
 
 </header>
+
+<main>
 
 <section class="hero">
 
@@ -459,13 +466,13 @@ BODY<br>
 HEALTH
 </h1>
 
-<p>Welcome to our salon</p >
+<p>Welcome to our salon</p>
 
-<a href="#contact" class="book-btn">BOOK NOW</a >
+<a href="#contact" class="book-btn">BOOK NOW</a>
 </div>
 
 <div class="hero-right">
-<img src="background1.png" alt="" >
+<img src="background1.png" alt="Beauty treatment background">
 </div>
 
 </section>
@@ -498,64 +505,64 @@ Tailored facial rituals designed to restore hydration, improve skin texture, and
 
 <div class="service-grid">
 
-<div class="service-card">
+<article class="service-card">
 <div>
 <h3>Facial Treatments</h3>
 <h4>Hydration & Skin Renewal</h4>
 
 <p>
 Customised facial treatments designed to deeply cleanse, hydrate, and restore skin radiance.
-</p >
+</p>
 </div>
 
-<a href="body.html" class="view-link">VIEW ALL</a >
-</div>
+<a href="body.html" class="view-link">VIEW ALL</a>
+</article>
 
-<div class="service-card">
+<article class="service-card">
 <div>
 <h3>Body Health</h3>
 <h4>Detox & Wellness Support</h4>
 
 <p>
 Body-focused treatments created to encourage circulation, relaxation, and overall wellness.
-</p >
+</p>
 </div>
 
-<a href="hifu.html" class="view-link">VIEW ALL</a >
-</div>
+<a href="hifu.html" class="view-link">VIEW ALL</a>
+</article>
 
-<div class="service-card">
+<article class="service-card">
 <div>
 <h3>7D HIFU Lifting</h3>
 <h4>Non-Surgical Age Management</h4>
 
 <p>
 Advanced HIFU technology designed to support skin firmness, contour definition, and natural lifting.
-</p >
+</p>
 </div>
 
-<a href="#" class="view-link">VIEW ALL</a >
-</div>
+<a href="#" class="view-link">VIEW ALL</a>
+</article>
 
-<div class="service-card">
+<article class="service-card">
 <div>
 <h3>Beauty Enhancement</h3>
 <h4>Finishing Touches</h4>
 
 <p>
 Complement your facial experience with beauty-enhancing services and personalised care.
-</p >
+</p>
 </div>
 
-<a href="#" class="view-link">VIEW ALL</a >
-</div>
+<a href="#" class="view-link">VIEW ALL</a>
+</article>
 
 </div>
 
 </section>
 
 <section class="parallax-banner">
-<img src="wellness.png" alt="Wellness">
+<img src="wellness.png" alt="Wellness spa experience">
 </section>
 
 <section class="contact" id="contact">
@@ -568,13 +575,17 @@ Get in Touch with Us
 
 <form class="contact-form">
 
-<input type="text" placeholder="Name">
+<label for="name" class="sr-only">Name</label>
+<input type="text" id="name" placeholder="Name" required>
 
-<input type="email" placeholder="Email">
+<label for="email" class="sr-only">Email</label>
+<input type="email" id="email" placeholder="Email" required>
 
-<input type="text" placeholder="Phone">
+<label for="phone" class="sr-only">Phone</label>
+<input type="tel" id="phone" placeholder="Phone">
 
-<textarea placeholder="Message"></textarea>
+<label for="message" class="sr-only">Message</label>
+<textarea id="message" placeholder="Message" required></textarea>
 
 <button type="submit">Submit</button>
 
@@ -582,9 +593,11 @@ Get in Touch with Us
 
 </section>
 
-<section class=“parallax-banner”>
-<img src="wellness.png” alt="Wellness”>
+<section class="parallax-banner">
+<img src="wellness.png" alt="Wellness and relaxation experience">
 </section>
+
+</main>
   
 <footer>
 
@@ -607,10 +620,10 @@ Sydney NSW 2000 Australia
 </div>
 
 <div class="footer-links">
-<a href="#">Privacy Policy</a >
-<a href="#">Accessibility Statement</a >
-<a href="#">Instagram</a >
-<a href="#">Facebook</a >
+<a href="#">Privacy Policy</a>
+<a href="#">Accessibility Statement</a>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
 </div>
 
 </div>
