@@ -1,272 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Facial Treatments at Beauty and Health Inn - Professional facial treatments including relaxation, oxygen, and age-smart facials in Sydney."/>
+<meta name="theme-color" content="#f5ede6"/>
+
+<title>Facial Treatments - Beauty and Health Inn</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=league+spartan:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#F5EDE6;
+color:#24304a;
+font-family:'Cormorant Garamond',serif;
+line-height:1.6;
+}
+
+h1,h2,h3{
+font-family:'Cormorant Garamond',serif;
+font-weight:500;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* NAV */
+
+.header{
+position:fixed;
+width:100%;
+padding:15px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(245,237,230,0.92);
+backdrop-filter:blur(10px);
+z-index:1000;
+top:0;
+left:0;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:18px;
+letter-spacing:1px;
+white-space:nowrap;
+flex-shrink:0;
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:500;
+}
+
+.logo img{
+max-width:60px;
+height:auto;
+display:block;
+}
+  
+nav{
+display:flex;
+}
+  
+.nav-links{
+display:flex;
+gap:42px;
+font-size:12px;
+font-family:'League Spartan',sans-serif;
+font-weight:300;
+list-style:none;
+margin:0;
+}
+
+.nav-links a{
+transition:opacity 0.3s ease;
+}
+
+.nav-links a:hover{
+opacity:0.6;
+}
+
+/* FACIAL PAGE */
+
+.facial-page {
+    padding: 60px 0 0 0;
+    margin-top: 90px;
+    background: #F5EDE6;
+}
+
+.facial-intro {
+    text-align: center;
+    padding: 60px 8% 80px;
+    background: #F5EDE6;
+}
+
+.facial-intro h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Marcellus', serif;
+}
+
+.facial-intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.treatment-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    margin: 0;
+    min-height: 320px;
+}
+
+.treatment-image {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.treatment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.treatment-text {
+    background: #F5EDE6;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.treatment-text h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.treatment-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 17px;
+    font-weight: 300;
+    color: #555;
+}
+
+.price {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+/* Alternate layout for section 2 */
+.treatment-section.reverse {
+    direction: ltr;
+}
+
+.treatment-section.reverse .treatment-image {
+    order: 2;
+}
+
+.treatment-section.reverse .treatment-text {
+    order: 1;
+}
+
+.book-section {
+    text-align: center;
+    padding: 80px 8%;
+    background: #F5EDE6;
+}
+
+.book-btn {
+    display: inline-block;
+    background: #1d2a44;
+    color: white;
+    padding: 16px 40px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    border: 2px solid #1d2a44;
+}
+
+.book-btn:hover {
+    background: #0f1823;
+    border-color: #0f1823;
+}
+
+.book-btn:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* FOOTER */
+
+footer{
+padding:120px 5% 40px;
+border-top:1px solid #999;
+background: white;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.2fr 1fr 1fr;
+gap:60px;
+align-items:start;
+}
+
+.footer-brand{
+font-size:28px;
+font-family:'League Spartan',serif;
+font-weight:300;
+line-height:1.3;
+}
+
+.footer-info{
+font-size:18px;
+font-family:'League Spartan',sans-serif;
+text-align:right;
+line-height:1.6;
+}
+
+.footer-links{
+font-size:18px;
+font-family:'League Spartan',sans-serif;
+text-align:right;
+line-height:1.6;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.bottom-line{
+margin-top:60px;
+border-top:1px solid #999;
+padding-top:20px;
+font-size:14px;
+opacity:.6;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.header{
+padding:12px 30px;
+}
+
+.logo{
+font-size:16px;
+gap:8px;
+}
+
+.logo img{
+max-width:50px;
+}
+
+.nav-links{
+gap:20px;
+flex-wrap:wrap;
+justify-content:flex-end;
+font-size:11px;
+}
+
+.facial-intro {
+    padding: 60px 5% 60px;
+}
+
+.facial-intro h1 {
+    font-size: 48px;
+}
+
+.treatment-section {
+    grid-template-columns: 1fr;
+    min-height: auto;
+}
+
+.treatment-section.reverse .treatment-image,
+.treatment-section.reverse .treatment-text {
+    order: unset;
+}
+
+.treatment-text {
+    padding: 40px 30px;
+}
+
+.treatment-text h2 {
+    font-size: 28px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.footer-brand{
+font-size:50px;
+}
+
+.footer-info,
+.footer-links{
+text-align:left;
+}
+
+}
+
+@media(max-width:480px){
+
+.facial-intro h1 {
+    font-size: 32px;
+}
+
+.treatment-text h2 {
+    font-size: 22px;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.treatment-text {
+    padding: 30px 20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
 <header class="header">
 
 <div class="logo">
-Beauty & Health Inn
+<img src="beauty health inn logo copy.webp" alt="Beauty & Health Inn">
+<span>BEAUTY and HEALTH iNN</span>
 </div>
 
 <nav class="nav-links">
 
-<a href="">Home</a >
+<a href="index.html">HOME</a>
 
-<a href=" ">Facial</a >
+<a href="facial.html">Facial</a>
 
-<a href="7Dhifu.html">7D HIFU</a >
+<a href="7dhifu.html">7D HIFU</a>
 
-<a href="body.html">Body</a >
+<a href="body.html">Body</a>
 
-<a href="other.html">Other Service</a >
+<a href="otherservice.html">Other Service</a>
 
-<a href="#contact">Contact</a >
+<a href="index.html#contact">Contact</a>
 
 </nav>
 
 </header>
 
+<main>
 
+<section class="facial-page">
 
-<section class="body-intro">
+    <div class="facial-intro">
+        <h1>Facial Treatment</h1>
+        <p>Healthy skin is built through consistency, balance, and professional care.</p>
+        <p>We focus on personalised facial treatments designed to restore hydration, improve skin texture, and support long-term skin health.</p>
+    </div>
 
-<h1>
-Body Health Care
-</h1>
+    <!-- Section 1: Image Left, Text Right -->
+    <div class="treatment-section">
+        <div class="treatment-image">
+            <img src="facial.jpg" alt="60 minute relaxation facial treatment showing professional skincare application">
+        </div>
+        <div class="treatment-text">
+            <h2>60 mins Relaxation Facial</h2>
+            <p>Designed to deeply cleanse, relax, and restore.</p>
+            <p>This treatment includes a triple-step cleansing ritual, facial and neck massage or lymphatic drainage, and a hydration mask treatment.</p>
+            <div class="price">$99 AUD</div>
+        </div>
+    </div>
 
-<p>
-Providing Everything You Need
-</p >
+    <!-- Section 2: Text Left, Image Right -->
+    <div class="treatment-section reverse">
+        <div class="treatment-image">
+            <img src="oxygen facial.jpg" alt="Oxygen facial treatment with hyaluronic acid infusion for hydrated skin">
+        </div>
+        <div class="treatment-text">
+            <h2>60 mins Oxygen Facial</h2>
+            <p>Designed to deeply hydrate and refresh the skin using hyaluronic acid serum or vitamin C infusion.</p>
+            <p>This treatment includes deep cleansing, a hydrating mask, and oxygen bubble technology for a clearer, more radiant complexion.</p>
+            <div class="price">$119 AUD</div>
+        </div>
+    </div>
+
+    <!-- Section 3: Image Left, Text Right -->
+    <div class="treatment-section">
+        <div class="treatment-image">
+            <img src="age.jpg" alt="Age Smart facial treatment combining anti-aging skincare with red LED light therapy">
+        </div>
+        <div class="treatment-text">
+            <h2>70 mins Age Smart Facial</h2>
+            <p>Designed for mature skin customers.</p>
+            <p>This restorative treatment combines professional anti-aging skincare with oxygen bubble cleansing, ultrasound infusion, and red LED light therapy to support skin firmness, hydration and overall radiance.</p>
+            <div class="price">$129 AUD</div>
+        </div>
+    </div>
+
+    <div class="book-section">
+        <a href="index.html#contact" class="book-btn">BOOK NOW</a>
+    </div>
 
 </section>
 
+</main>
 
+<footer>
 
-<section class="body-grid">
+<div class="footer-grid">
 
-
-
-<div class="body-image">
-< img src="mat.png" alt="">
+<div class="footer-brand">
+BEAUTY and HEALTH iNN<br>
+<span class="footer-tagline">
+Your local salon of Relaxation
+</span>
 </div>
 
-<div class="body-text">
+<div class="footer-info">
+0426621588<br><br>
 
-<h2>
-EMS Muscle Building
-</h2>
+beautyhealthinn@hotmail.com<br><br>
 
-<p>
-A single 30-minute session can trigger thousands
-of muscle contractions to support muscle tone,
-core strengthening, body contouring,
-and targeted fat reduction.
-</p >
+74/183 Macquarie St<br>
+Sydney NSW 2000 Australia
+</div>
 
-<p>
-Treatment areas include:
-Abdomen, Buttocks, Arms, Thighs, Calves
-</p >
-
-<p>
-Recommended:
-1 session per week,
-4–6 treatments recommended
-</p >
-
-<p>
-Not suitable for clients who are pregnant,
-have pacemakers, metal implants,
-recent surgery, or muscle-related conditions.
-</p >
-
-<div class="price">
-$450aud
+<div class="footer-links">
+<a href="#">Privacy Policy</a>
+<a href="#">Accessibility Statement</a>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
 </div>
 
 </div>
 
-
-
-
-
-<div class="body-text">
-
-<h2>
-EMS Happiness Mat
-</h2>
-
-<p>
-This non-invasive treatment supports
-pelvic floor wellness, core stability,
-postpartum recovery,
-and muscle re-education.
-</p >
-
-<p>
-Clients remain comfortably seated while EMS
-technology activates deep muscle groups.
-</p >
-
-<p>
-Recommended:
-2 sessions weekly,
-6–8 sessions total
-</p >
-
-<p>
-Not suitable for clients with pacemakers,
-metal implants,
-or active infections.
-</p >
-
-<div class="price">
-$450aud
-</div>
-
-</div>
-
-<div class="body-image">
-< img src="wellness.png" alt="">
-</div>
-
-
-
-
-
-<div class="body-image">
-< img src="guasha.jpg" alt="">
-</div>
-
-<div class="body-text">
-
-<h2>
-Gua Sha
-</h2>
-
-<p>
-Traditional sculpting and lymphatic massage
-designed to release tension,
-stimulate circulation,
-and support lymphatic drainage.
-</p >
-
-<p>
-Common treatment areas include:
-Face, Neck, Shoulders, Jawline, Back
-</p >
-
-<p>
-May help reduce puffiness,
-support circulation,
-and promote relaxation.
-</p >
-
-<div class="price">
-15mins Target Area $45
-<br>
-Package 12 Sessions $399
-</div>
-
-</div>
-
-
-
-
-
-<div class="body-text">
-
-<h2>
-Uterus Treatment
-</h2>
-
-<p>
-Gentle warmth and wellness support
-designed to promote circulation,
-comfort,
-and abdominal relaxation.
-</p >
-
-<p>
-Supports feminine wellness
-during stress, fatigue,
-or discomfort.
-</p >
-
-<p>
-Not suitable during pregnancy
-or for clients with severe abdominal conditions.
-</p >
-
-<div class="price">
-40mins $79
-<br>
-Package 15 Sessions $599
-</div>
-
-</div>
-
-<div class="body-image">
-< img src="uterus.jpg" alt="">
-</div>
-
-
-
-
-
-<div class="body-image">
-< img src="cupping.jpg" alt="">
-</div>
-
-<div class="body-text">
-
-<h2>
-Air Cupping
-</h2>
-
-<p>
-Air cupping therapy uses gentle suction
-to support circulation,
-muscle relaxation,
-and lymphatic drainage.
-</p >
-
-<p>
-Treatment areas include:
-Back, Shoulders, Neck, Legs, Waist
-</p >
-
-<p>
-Temporary cup marks may appear
-and usually fade naturally within days.
-</p >
-
-<div class="price">
-15mins $39
-</div>
-
-</div>
-
-</section>
-
-<section class="book-section">
-
-<a href="#contact" class="book-btn">
-Book Now
-</a >
-
-</section>
-
-
-
-
-<footer class="footer" id="contact">
-
-<div>
-<h3>Beauty and Health Inn</h3>
-<p>Your local salon of relaxation.</p >
-</div>
-
-<div>
-<p>0426621588</p >
-<p>beautyhealthinn@hotmail.com</p >
-<p>74/183 Macquarie St Sydney NSW2000</p >
+<div class="bottom-line">
+© Beauty and Health Inn
 </div>
 
 </footer>
