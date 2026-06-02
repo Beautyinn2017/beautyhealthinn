@@ -133,23 +133,11 @@ opacity:0.6;
 
 .treatment-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
     gap: 40px;
     margin-bottom: 80px;
     background: white;
-}
-
-.treatment-grid--reverse {
-    direction: ltr;
-}
-
-.treatment-grid--reverse .treatment-image {
-    order: 2;
-}
-
-.treatment-grid--reverse .treatment-text {
-    order: 1;
 }
 
 .treatment-image img {
@@ -162,6 +150,7 @@ opacity:0.6;
 
 .treatment-text {
     padding: 60px;
+    max-width: 420px;
 }
 
 .treatment-text h2 {
@@ -299,11 +288,6 @@ font-size:11px;
     margin-bottom: 60px;
 }
 
-.treatment-grid--reverse .treatment-image,
-.treatment-grid--reverse .treatment-text {
-    order: unset;
-}
-
 .treatment-text {
     padding: 30px;
 }
@@ -399,7 +383,7 @@ text-align:left;
         </div>
     </div>
 
-    <div class="treatment-grid treatment-grid--reverse">
+    <div class="treatment-grid">
         <div class="treatment-image">
             <img src="oxygen facial.jpg" alt="Oxygen facial treatment with hyaluronic acid infusion for hydrated skin">
         </div>
