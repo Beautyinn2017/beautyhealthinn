@@ -391,95 +391,201 @@ text-align:left;
 
 <main>
 
-<section class="facial-page">
+<section class="hero-banner">
+ <img scr="background3.jpg"> alt="other Service"
 
-    <div class="facial-intro">
-        <h1>Facial Treatment</h1>
-        <p>Healthy skin is built through consistency, balance, and professional care.</p>
-        <p>We focus on personalised facial treatments designed to restore hydration, improve skin texture, and support long-term skin health.</p>
+</section>
+
+<section class="service-row">
+
+    <div class="service-image">
+        < img src="needling.jpg" alt="Skin Needling">
     </div>
 
-    <!-- Section 1: Image Left, Text Right -->
-    <div class="treatment-section">
-        <div class="treatment-image">
-            <img src="facial.jpg" alt="60 minute relaxation facial treatment showing professional skincare application">
-        </div>
-        <div class="treatment-text">
-            <h2>60 mins Relaxation Facial</h2>
-            <p>Designed to deeply cleanse, relax, and restore.</p>
-            <p>This treatment includes a triple-step cleansing ritual, facial and neck massage or lymphatic drainage, and a hydration mask treatment.</p>
-            <div class="price">$99 AUD</div>
-        </div>
-    </div>
+    <div class="service-text">
+        <h2>Skin Needling</h2>
+        <p class="subtitle">Resurface and refine the skin</p >
 
-    <!-- Section 2: Text Left, Image Right -->
-    <div class="treatment-section reverse">
-        <div class="treatment-image">
-            <img src="oxygen facial.jpg" alt="Oxygen facial treatment with hyaluronic acid infusion for hydrated skin">
-        </div>
-        <div class="treatment-text">
-            <h2>60 mins Oxygen Facial</h2>
-            <p>Designed to deeply hydrate and refresh the skin using hyaluronic acid serum or vitamin C infusion.</p>
-            <p>This treatment includes deep cleansing, a hydrating mask, and oxygen bubble technology for a clearer, more radiant complexion.</p>
-            <div class="price">$119 AUD</div>
-        </div>
-    </div>
+        <p>
+        Choose your skin booster:
+        </p >
 
-    <!-- Section 3: Image Left, Text Right -->
-    <div class="treatment-section">
-        <div class="treatment-image">
-            <img src="age.jpg" alt="Age Smart facial treatment combining anti-aging skincare with red LED light therapy">
-        </div>
-        <div class="treatment-text">
-            <h2>70 mins Age Smart Facial</h2>
-            <p>Designed for mature skin customers.</p>
-            <p>This restorative treatment combines professional anti-aging skincare with oxygen bubble cleansing, ultrasound infusion, and red LED light therapy to support skin firmness, hydration and overall radiance.</p>
-            <div class="price">$129 AUD</div>
+        <p>
+        Collagen Anti-Wrinkle<br>
+        Brightening Booster<br>
+        Hydration Booster<br>
+        Acne Repair Serum<br>
+        Pore Refining Complex<br>
+        Pigmentation Corrector<br>
+        Calming Recovery Ampoule
+        </p >
+
+        <div class="price">
+            Skin Needling with LED — $299
         </div>
     </div>
 
-    <div class="book-section">
-        <a href="index.html#contact" class="book-btn">BOOK NOW</a>
+</section>
+
+<section class="service-row reverse">
+
+    <div class="service-image">
+        < img src="eyelash.jpg" alt="Eyelash Extension">
+    </div>
+
+    <div class="service-text">
+
+        <h2>Eyelash Extension</h2>
+
+        <p class="subtitle">
+        Perfect way to enhance your natural lashes
+        </p >
+
+        <p>
+        Silk Lashes<br>
+        Slightly firmer texture and stronger curl.
+        </p >
+
+        <p>
+        Mink Lashes<br>
+        Softer feel and more natural appearance.
+        </p >
+
+        <div class="price">
+            Silk $90 | Mink $130<br>
+            Infill $30 | Remove $30
+        </div>
+
+    </div>
+
+</section>
+
+  <section class="service-row">
+
+    <div class="service-image">
+        < img src="whitening.jpg" alt="Teeth Whitening">
+    </div>
+
+    <div class="service-text">
+
+        <h2>Teeth Whitening</h2>
+
+        <p class="subtitle">
+        Lighten the colour of the enamel
+        </p >
+
+        <p>
+        30 Minute Express Whitening
+        </p >
+
+        <p>
+        60 Minute Intensive Whitening
+        </p >
+
+        <div class="price">
+            30 mins $159<br>
+            60 mins $199
+        </div>
+
+    </div>
+
+</section>
+
+<section class="service-row reverse">
+
+    <div class="service-image">
+        < img src="hair.jpg" alt="Hair Rich">
+    </div>
+
+    <div class="service-text">
+
+        <h2>Hair Rich</h2>
+
+        <p class="subtitle">
+        Korea serum lets your hair grow
+        </p >
+
+        <p>
+        Supports scalp health and hydration.<br>
+        Suitable for thinning hair concerns.
+        </p >
+
+        <div class="price">
+            Scalp Line $299<br>
+            Balding Top $399
+        </div>
+
     </div>
 
 </section>
 
 </main>
 
-<footer>
+</style>
 
-<div class="footer-grid">
+.hero-banner img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    display:block;
+}
 
-<div class="footer-brand">
-BEAUTY and HEALTH iNN<br>
-<span class="footer-tagline">
-Your local salon of Relaxation
-</span>
-</div>
+.service-row{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+    border-bottom:1px solid #d8d1ca;
 
-<div class="footer-info">
-0426621588<br><br>
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
 
-beautyhealthinn@hotmail.com<br><br>
+.service-row.reverse{
+    flex-direction:row-reverse;
+}
 
-74/183 Macquarie St<br>
-Sydney NSW 2000 Australia
-</div>
+.service-image{
+    flex:1;
+}
 
-<div class="footer-links">
-<a href="#">Privacy Policy</a>
-<a href="#">Accessibility Statement</a>
-<a href="#">Instagram</a>
-<a href="#">Facebook</a>
-</div>
+.service-image img{
+    width:100%;
+    max-width:420px;
+    display:block;
+}
 
-</div>
+.service-text{
+    flex:1;
+}
 
-<div class="bottom-line">
-© Beauty and Health Inn
-</div>
+.service-text h2{
+    font-size:42px;
+    margin-bottom:10px;
+}
 
-</footer>
+.subtitle{
+    font-style:italic;
+    margin-bottom:25px;
+}
 
-</body>
-</html>
+.service-text p{
+    margin-bottom:12px;
+}
+
+.price{
+    margin-top:25px;
+    font-size:24px;
+}
+
+
+
+
+  
+
+
+  
+
+
+
+
