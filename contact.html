@@ -1,3 +1,420 @@
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5ede6;
+color:#24304a;
+font-family:'Cormorant Garamond’,serif;
+line-height:1.6;
+}
+
+h1,h2,h3{
+font-family:'Cormorant Garamond',serif;
+font-weight:500;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* NAV */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:28px 60px;
+display:flex;
+align-items:center;
+background:rgba(245,237,230,0.92);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:26px;
+letter-spacing:1px;
+white-space:nowrap;
+flex-shrink:0;
+}
+  
+nav(
+display:flex;
+)
+
+  
+.nav-links{
+display:flex;
+gap:42px;
+font-size:12px;
+font-family:'League Spartan',sans-serif}
+font-weight:300;
+margin-left:auto;
+
+.nav-links a:hover{
+opacity:.6;
+}
+
+/* HERO */
+
+.hero{
+min-height:calc(100vh-88px);
+display:grid;
+grid-template-columns:0.9fr 1.1fr;
+align-items:center;
+padding:120px 70px 0;
+background:#f8f5f0;
+}
+
+.hero-left{
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding-left:90px;
+Padding-right:60px;
+}
+
+.hero-left h1{
+font-size:92px;
+line-height:0.9;
+margin-bottom:28px;
+letter-spacing:-3px;
+font-weight:400;
+}
+
+.hero-left p{
+font-size:18px;
+margin-bottom:35px;
+color:#555;
+font-weight:300;
+}
+
+.book-btn{
+display:inline-block;
+border:2px solid #24304a;
+padding:18px 48px;
+border-radius:50px;
+font-size:15px;
+letter-spacing:1px;
+transition:.3s;
+width:fit-content;
+}
+
+.book-btn:hover{
+background:#24304a;
+color:white;
+}
+
+.hero-right img{
+width:100%;
+height:88vh;
+object-fit:cover;
+}
+
+/* ABOUT */
+
+.about{
+padding:120px 12%;
+Max-width:1400px;
+margin:0 auto;
+text-align:left;
+}
+
+.about h2{
+font-size:70px;
+margin-bottom:25px;
+font-weight:400;
+font-family:'Marcellus',serif;
+}
+
+.about-sub{
+font-size:12px;
+letter-spacing:3px;
+text-transform:uppercase;
+margin-bottom:38px;
+color:#666;
+font-family:'league Spartan',sans-serif;
+}
+
+.about-text{
+font-size:22px;
+max-width:750px;
+line-height:1.8;
+font-weight:300;
+font-family:'inter',sans-serif;
+margin-left:auto;
+}
+
+/* SERVICES */
+
+.services{
+padding:120px 8%;
+text-align:center;
+}
+
+.section-title{
+text-align:center;
+font-size:92px;
+margin-bottom:25px;
+Letter-spacing:-3px;
+Font-weight:400;
+line-height:0.95;
+}
+
+.section-sub{
+text-align:center;
+font-size:28px;
+margin-bottom:30px;
+color:#444;
+font-family:'Cormorant Garamond',serif;
+}
+
+.section-description{
+text-align:center;
+max-width:900px;
+margin:0 auto 100px;
+font-size:20px;
+font-weight:300;
+line-height:1.7;
+color:#555;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:0;
+border-top:1px solid #777;
+border-left:1px solid #777;
+}
+
+.service-card{
+padding:80px;
+border-right:1px solid #777;
+border-bottom:1px solid #777;
+min-height:380px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.service-card h3{
+font-size:48px;
+margin-bottom:12px;
+}
+
+.service-card h4{
+font-size:22px;
+font-family:'Cormorant Garamond',serif;
+font-weight:400;
+margin-bottom:30px;
+}
+
+.service-card p{
+font-size:17px;
+font-weight:300;
+max-width:420px;
+}
+
+.view-link{
+margin-top:40px;
+display:inline-block;
+font-size:16px;
+text-decoration:underline;
+}
+
+/* IMAGE */
+
+.wellness-image img{
+width:100%;
+height:500px;
+object-fit:cover;
+}
+
+/* CONTACT */
+
+.contact{
+padding:120px 10%;
+}
+
+.contact h2{
+text-align:center;
+font-size:90px;
+margin-bottom:20px;
+}
+
+.contact-sub{
+text-align:center;
+margin-bottom:60px;
+font-size:22px;
+font-family:'Cormorant Garamond',serif;
+}
+
+.contact-form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:22px;
+border:1px solid #777;
+background:transparent;
+border-radius:40px;
+font-size:16px;
+font-family:'Inter',sans-serif;
+}
+
+.contact-form textarea{
+min-height:180px;
+border-radius:30px;
+resize:none;
+}
+
+.contact-form button{
+padding:20px;
+border:none;
+background:#bf3545;
+color:white;
+border-radius:50px;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact-form button:hover{
+opacity:.8;
+}
+
+.parallax-banner(
+Width:100%;
+Height:100%;
+Overflow:hidden;
+)
+
+.parallyax-banner img(
+Width:100%;
+Height:100%;
+Object-fit:cover;
+Display:block;
+)
+
+/* FOOTER */
+
+footer{
+padding:120px 5% 40px;
+border-top:1px solid #999;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.2fr 1fr 1fr;
+gap:60px;
+align-items:start;
+}
+
+.footer-brand{
+    font-size:28px;
+    font-family:'League Spartan',serif;
+    font-weight:300;
+    line-height:1.3;
+}
+
+.footer-info{
+    font-size:18px;
+    font-family:'League Spartan',sans-serif;
+    text-align:right;
+    line-height:1.6;
+}
+
+.footer-links{
+    font-size:18px;
+    font-family:'League Spartan',sans-serif;
+    text-align:right;
+    line-height:1.6;
+}
+
+.bottom-line{
+margin-top:60px;
+border-top:1px solid #999;
+padding-top:20px;
+font-size:14px;
+opacity:.6;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+nav{
+padding:20px;
+flex-direction:column;
+gap:20px;
+}
+
+.nav-links{
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.hero-left{
+padding:60px 30px;
+}
+
+.hero-left h1{
+font-size:64px;
+}
+
+.about h2,
+.section-title,
+.contact h2{
+font-size:58px;
+}
+
+.about-text{
+font-size:34px;
+}
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.footer-brand{
+font-size:50px;
+}
+
+}
+
+</style>
+</head>
+
+
+<body>
+
 <header class="header">
 
 <div class="logo">
@@ -6,7 +423,7 @@ Beauty & Health Inn
 
 <nav class="nav-links">
 
-<a href=" ">Home</a >
+<a href="index.html”>Home</a >
 
 <a href="facial.html">Facial</a >
 
@@ -14,195 +431,83 @@ Beauty & Health Inn
 
 <a href="body.html">Body</a >
 
-<a href="otherservice.html">Other Service</a >
+<a href="other.html">Other Service</a >
 
-<a href="contact.html">Contact</a >
+<a href="#contact">Contact</a >
 
 </nav>
 
 </header>
 
+<main>
+
 <section class="contact-page">
 
-  <div class="contact-intro">
-    <h1>Contact</h1>
-    <p>
-      We’re here to assist with bookings, treatment enquiries,
-      consultations, and personalised skincare recommendations.
-    </p >
-  </div>
+    <div class="contact-title">
+        <h1>Contact</h1>
+    </div>
 
-  <div class="contact-container">
+    <div class="contact-container">
 
-    <div class="contact-info">
+        <div class="contact-info">
 
-      <h2>Beauty and Health Inn</h2>
+            <h2>Connect With Us</h2>
 
-      <div class="contact-item">
-        <strong>Address</strong>
-        <p>Level 7, Suite 4, 183 macquarie Street, Sydney NSW 2000</p >
-      </div>
+            <p>
+                Reach out to us for enquiries, bookings,
+                or personalised beauty consultations.
+            </p >
 
-      <div class="contact-item">
-        <strong>Phone</strong>
-        <p>0426 621 588</p >
-      </div>
+            <div class="contact-details">
 
-      <div class="contact-item">
-        <strong>Email</strong>
-        <p>beautyhealthinn@hotmail.com</p >
-      </div>
+                <p>
+                    <strong>Address</strong><br>
+                    74/183 Macquarie Street<br>
+                    Sydney NSW 2000 Australia
+                </p >
 
-      <div class="contact-item">
-        <strong>Opening Hours</strong>
-        <p>
-          Monday – Friday: 10:00am – 7:00pm<br>
-          Saturday: 11:00am – 4:00pm<br>
-          Sunday: Closed
-        </p >
-      </div>
+                <p>
+                    <strong>Phone</strong><br>
+                    0426 621 588
+                </p >
 
-      <a href=" " class="book-btn">
-        BOOK NOW
-      </a >
+                <p>
+                    <strong>Email</strong><br>
+                    beautyhealthinn@hotmail.com
+                </p >
 
-      <iframe
-        src="https://www.google.com/maps?q=183+macquaire+Street+Sydney&output=embed"
-        loading="lazy">
-      </iframe>
+                <p>
+                    <strong>Opening Hours</strong><br>
+                    Monday – Saturday<br>
+                    9:30am – 6:00pm
+                </p >
+
+            </div>
+
+        </div>
+
+        <div class="contact-map">
+
+            <iframe
+                src="https://www.google.com/maps?q=74/183%20Macquarie%20Street%20Sydney%20NSW%202000&output=embed"
+                loading="lazy">
+            </iframe>
+
+        </div>
 
     </div>
 
-    <div class="contact-form">
-
-      <h2>Send Us A Message</h2>
-
-      <form>
-        <input type="text" placeholder="Your Name" required>
-
-        <input type="email" placeholder="Email Address" required>
-
-        <input type="tel" placeholder="Phone Number">
-
-        <textarea placeholder="Your Message"></textarea>
-
-        <button type="submit">
-          Submit
-        </button>
-      </form>
-
+    <div class="book-section">
+        <a href=" " class="book-btn">
+            BOOK NOW
+        </a >
     </div>
-
-  </div>
 
 </section>
 
-contact-page{
-    background:#F5EDE6;
-    padding-top:120px;
-}
+</main>
 
-.contact-intro{
-    text-align:center;
-    padding:60px 8%;
-}
-
-.contact-intro h1{
-    font-size:70px;
-    font-family:'Marcellus',serif;
-    margin-bottom:20px;
-}
-
-.contact-intro p{
-    max-width:700px;
-    margin:auto;
-    color:#555;
-    font-size:18px;
-}
-
-.contact-container{
-    max-width:1200px;
-    margin:auto;
-    padding:0 8% 100px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-}
-
-.contact-info,
-.contact-form{
-    background:#fff;
-    padding:50px;
-}
-
-.contact-info h2,
-.contact-form h2{
-    margin-bottom:30px;
-    font-size:36px;
-}
-
-.contact-item{
-    margin-bottom:25px;
-}
-
-.contact-item strong{
-    display:block;
-    margin-bottom:8px;
-}
-
-.book-btn{
-    display:inline-block;
-    margin:20px 0 40px;
-    padding:14px 40px;
-    background:#24304A;
-    color:white;
-    text-decoration:none;
-    letter-spacing:1px;
-}
-
-.contact-info iframe{
-    width:100%;
-    height:280px;
-    border:none;
-}
-
-.contact-form form{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-.contact-form input,
-.contact-form textarea{
-    padding:16px;
-    border:1px solid #ddd;
-    font-size:15px;
-}
-
-.contact-form textarea{
-    min-height:150px;
-    resize:vertical;
-}
-
-.contact-form button{
-    background:#24304A;
-    color:white;
-    border:none;
-    padding:16px;
-    cursor:pointer;
-}
-
-@media(max-width:768px){
-
-    .contact-container{
-        grid-template-columns:1fr;
-    }
-
-    .contact-intro h1{
-        font-size:50px;
-    }
-}
-
+<footer>
 
 <footer class="footer">
 
