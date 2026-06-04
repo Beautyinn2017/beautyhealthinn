@@ -389,11 +389,10 @@ text-align:left;
 
 </header>
 
-<main>
+  <main>
 
 <section class="hero-banner">
  <img scr="background3.jpg"> alt="other Service"
-
 </section>
 
 <section class="service-row">
@@ -534,41 +533,39 @@ text-align:left;
     padding:40px 0;
     border-bottom:1px solid #d8d1ca;
 
-    display:flex;
-    align-items:center;
-    gap:50px;
-}
+)
 
-.service-row.reverse{
-    flex-direction:row-reverse;
-}
+.service-row.service{
+  flex-direction:row-reverse;
+)
 
-.service-image{
-    flex:1;
-}
+.service-image(
+flex:1
+)
 
-.service-image img{
-    width:100%;
-    max-width:420px;
-    display:block;
-}
+.service-image img(
+width:100%
+max-width:450px;
+display:block;
+)
 
-.service-text{
-    flex:1;
-}
+.service-text(
+flex:1;
+)
 
-.service-text h2{
+.service-text h2(
     font-size:42px;
     margin-bottom:10px;
 }
 
 .subtitle{
     font-style:italic;
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 .service-text p{
     margin-bottom:12px;
+  line-height:1.8;
 }
 
 .price{
@@ -576,6 +573,24 @@ text-align:left;
     font-size:24px;
 }
 
+.book-section(
+  text-align:center;
+  padding:50px 0;
+
+@media (max-width:900px)(
+.service-row,
+.service-row.reverse{
+    flex-direction:column;
+}
+
+  )
+.service-image img{
+    max-width:100%;
+}
+
+.service-text h2{
+    font-size:32px;
+}
 </style>
 
   </head>
