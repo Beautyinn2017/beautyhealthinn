@@ -279,16 +279,19 @@ opacity:.6;
 @media(max-width:900px){
 
 .header{
-padding:12px 30px;
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+padding:14px 30px;
 }
 
 .logo{
-font-size:16px;
-gap:8px;
+font-size:22px;
+gap:14px;
 }
 
 .logo img{
-max-width:50px;
+max-width:40px;
 }
 
 .nav-links{
@@ -303,7 +306,7 @@ font-size:11px;
 }
 
 .facial-intro h1 {
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .treatment-section {
@@ -326,15 +329,33 @@ font-size:11px;
 
 .footer-grid{
 grid-template-columns:1fr;
+  gap:35px;
 }
 
-.footer-brand{
-font-size:50px;
+.footer-grid{
+  text-align:center;
+}
+  
+.footer-brand{,
+  footer-size:14px;
+  line-height:1.2;
+  text-align:center;
 }
 
+.footer-tagline{
+  font-size:14px;
+  line-height:1.4;
+}
+
+  
 .footer-info,
 .footer-links{
-text-align:left;
+ text-align:center;
+ }
+  
+.footer-links{
+text-size:14px;
+  line-height:2;
 }
 
 }
@@ -355,26 +376,6 @@ text-align:left;
 
 .treatment-text {
     padding: 30px 20px;
-}
-
-.footer-grid{
-grid-template-columns:1fr;
-  gap:35px;
-}
-
-.footer-brand{
-font-size:30px;
-  line-height:1.5;
-}
-
-.footer-info,
-.footer-link{
- text-align:left;
- }
-  
-.footer-links{
-text-size:14px;
-  line-height:2;
 }
 
 }
