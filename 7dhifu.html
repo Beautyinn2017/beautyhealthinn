@@ -279,27 +279,23 @@ opacity:.6;
 @media(max-width:900px){
 
 .header{
-display:flex;
-padding:14px 30px;
+padding:12px 30px;
 }
 
 .logo{
-font-size:22px;
-gap:14px;
+font-size:16px;
+gap:8px;
 }
 
 .logo img{
-max-width:40px;
+max-width:50px;
 }
 
 .nav-links{
-width:100%;
-display:flex;
-flex-wrap:nowrap;
-gap:16px;
-font-size:14px;
-margin-top:12px;
-justify-content:flex-start;
+gap:20px;
+flex-wrap:wrap;
+justify-content:flex-end;
+font-size:11px;
 }
 
 .facial-intro {
@@ -307,7 +303,7 @@ justify-content:flex-start;
 }
 
 .facial-intro h1 {
-    font-size: 40px;
+    font-size: 48px;
 }
 
 .treatment-section {
@@ -321,42 +317,24 @@ justify-content:flex-start;
 }
 
 .treatment-text {
-    padding:40px 30px;
+    padding: 40px 30px;
 }
 
 .treatment-text h2 {
     font-size: 28px;
 }
- 
+
 .footer-grid{
 grid-template-columns:1fr;
-  gap:35px;
 }
 
-.footer-grid{
-  text-align:center;
-}
-  
-.footer-brand{,
-  footer-size:14px;
-  line-height:1.2;
-  text-align:center;
+.footer-brand{
+font-size:50px;
 }
 
-.footer-tagline{
-  font-size:14px;
-  line-height:1.4;
-}
-
-  
 .footer-info,
 .footer-links{
- text-align:center;
- }
-  
-.footer-links{
-text-size:14px;
-  line-height:2;
+text-align:left;
 }
 
 }
@@ -382,22 +360,23 @@ text-size:14px;
 }
 
 .hero-section{
-display:grid;
-grid-template-columns:1fr 140px;
-gap:20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
 max-width:1400px;
-margin:20px auto;
-padding:0 20px;
-flex-directon:colimn;
+margin:80px auto;
+padding:0 40px;
 }
 
 .hero-text{
-padding-top:80px;
+flex:1;
 }
 
 .hero-text h1{
-font-size:80px;
-line-height:1.1;
+font-size:64px;
+font-weight:300;
+margin-bottom:20px;
 }
 
 .hero-text p{
@@ -410,9 +389,10 @@ flex:1;
 }
 
 .hero-image img{
-width:140px;
-max-width:100%;
+width:100%;
+display:block;
 }
+
 
 .info-section{
 max-width:1400px;
@@ -429,10 +409,8 @@ font-weight:300;
 
 .info-grid{
 display:grid;
-grid-template-columns:1fr 1fr 1fr1fr;
-  grad-template-conlumns:1fr;
-  padding:25px;
-gap:20px;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
 }
 
 .info-card{
@@ -454,8 +432,8 @@ padding:0 40px;
 
 .technology-section h2{
 text-align:center;
-font-size:42px;
-margin-bottom:30px;
+font-size:48px;
+margin-bottom:40px;
 }
 
 .technology-section p{
